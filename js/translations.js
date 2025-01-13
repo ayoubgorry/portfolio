@@ -38,6 +38,8 @@ const translations = {
         'school-management-desc': 'Système de Gestion Scolaire',
         'razy-desc': 'Linux File System & Distribution',
         'colorizer-desc': 'Application de Colorisation d\'Images',
+        'rdeef-desc': 'Projet de stage en REGIE AUTONOME INTERCOMMUNALE DE DISTRIBUTION D’EAU ET D’ELECTRICITE DE FES',
+        'view-doc': 'Voir Doc',
 
         // Experience section
         'experience-title': 'Expérience Professionnelle',
@@ -60,7 +62,10 @@ const translations = {
         'bac-period': '2021',
 
         // Contact section
-        'name-contact':'Nom'
+        'name-contact':'Nom',
+
+        // Copyright section
+        'copyright': '© 2025 Ayoub Gorry. Tous droits réservés.'
     },
     en: {
         // Navigation
@@ -93,6 +98,7 @@ const translations = {
         'ai': 'Artificial Intelligence',
 
         // Projects section
+        'view-project': 'View project',
         'projects-title': 'Projects',
         'view-project': 'View project',
         'demo': 'Demo',
@@ -101,6 +107,8 @@ const translations = {
         'school-management-desc': 'School Management System',
         'razy-desc': 'Linux File System & Distribution',
         'colorizer-desc': 'Image Colorization Application',
+        'rdeef-desc': 'RADEEF Internship Project - Fez',
+        'view-doc': 'View Doc',
 
         // Experience section
         'experience-title': 'Professional Experience',
@@ -123,7 +131,10 @@ const translations = {
         'bac-period': '2021',
 
         // Contact section
-        'name-contact':'Name'
+        'name-contact':'Name',
+
+        // Copyright section
+        'copyright': '© 2025 Ayoub Gorry. All rights reserved.'
     }
 };
 
