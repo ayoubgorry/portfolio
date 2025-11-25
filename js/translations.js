@@ -10,39 +10,39 @@ const translations = {
 
         // Hero section
         'hero-title': 'Transformation Digitale & Intelligence Artificielle',
-        'hero-description': 'Étudiant passionné par l\'IA et la transformation digitale, je combine expertise technique et vision innovante pour créer des solutions d\'avenir.',
+        'hero-description': 'Étudiant en dernière année d\'ingénierie en Transformation Digitale et Intelligence Artificielle, à la recherche d\'un stage PFE dans les domaines de l\'IA, de la Data, du Cloud ou du DevOps. Compétent en Machine Learning, LLMs, Docker, Azure et CI/CD. Apprenant motivé avec de fortes capacités de résolution de problèmes.',
         'contact-me': 'Me contacter',
         'view-cv': 'Voir le CV',
+        'cv-link': 'static/docs/AYOUB GORRY CV.pdf', 
 
         // About section
         'about-title': 'À propos',
         'technical-skills': 'Compétences Techniques',
         'programming-languages': 'Langages de Programmation',
-        'frameworks-tools': 'Frameworks & Outils',
-        'cloud-database': 'Cloud & Base de données',
-        'languages-title': 'Langues',
-        'interests-title': 'Centres d\'intérêt',
-        'arabic': 'Arabe - Natif',
-        'french': 'Français - Courant',
-        'english': 'Anglais - Courant',
-        'tech-watch': 'Veille technologique',
-        'e-education': 'E-Education',
-        'ai': 'Intelligence Artificielle',
+        'cloud-database': 'Base de données',
 
         // Projects section
         'projects-title': 'Projets',
         'view-project': 'Voir le projet',
         'demo': 'Demo',
+        'judiciAIre_desc': 'Chatbot juridique intelligent basé sur l\'IA pour le droit marocain',
         'cv-genius-desc': 'Classification des CVs avec Machine Learning',
         'ivision-desc': 'Application Web basée sur le Cloud et IA',
         'school-management-desc': 'Système de Gestion Scolaire',
         'razy-desc': 'Linux File System & Distribution',
         'colorizer-desc': 'Application de Colorisation d\'Images',
-        'rdeef-desc': 'Projet de stage en REGIE AUTONOME INTERCOMMUNALE DE DISTRIBUTION D’EAU ET D’ELECTRICITE DE FES',
+        'rdeef-desc': 'Projet de stage en REGIE AUTONOME INTERCOMMUNALE DE DISTRIBUTION D\'EAU ET D\'ELECTRICITE DE FES',
         'view-doc': 'Voir Doc',
 
         // Experience section
         'experience-title': 'Expérience Professionnelle',
+        'abb-internship': 'DStagiaire Data Science – Al Barid Bank, Rabat',
+        'abb-internship-tasks': [
+            'Développement d\'un système de détection de fraude aux cartes bancaires sur des données fortement déséquilibrées (taux de fraude de 0,67 %).',
+            'Application de techniques de feature engineering et de stratégies de rééchantillonnage pour améliorer la généralisation.',
+            'Optimisation des modèles XGBoost, Random Forest et LightGBM, atteignant 95,9 % de précision et 88 % de rappel.'
+        ],
+        
         'web-dev-internship': 'Stage en Développement Web - RADEEF, Fès',
         'internship-tasks': [
             'Développement d\'applications web',
@@ -62,7 +62,7 @@ const translations = {
         'bac-period': '2021',
 
         // Contact section
-        'name-contact':'Nom',
+        'name-contact': 'Nom',
 
         // Copyright section
         'copyright': '© 2025 Ayoub Gorry. Tous droits réservés.'
@@ -78,30 +78,22 @@ const translations = {
 
         // Hero section
         'hero-title': 'Digital Transformation & Artificial Intelligence',
-        'hero-description': 'Student passionate about AI and digital transformation, I combine technical expertise and innovative vision to create future solutions.',
+        'hero-description': 'Final-year Digital Transformation & AI engineering student seeking a PFE internship in AI, Data, Cloud, or DevOps. Skilled in ML, LLMs, Docker, Azure, and CI/CD. Motivated learner with strong problem-solving abilities.',
         'contact-me': 'Contact me',
         'view-cv': 'View Resume',
+        'cv-link': 'static/resume_gorry_ayoub.pdf', 
 
         // About section
         'about-title': 'About',
         'technical-skills': 'Technical Skills',
         'programming-languages': 'Programming Languages',
-        'frameworks-tools': 'Frameworks & Tools',
-        'cloud-database': 'Cloud & Databases',
-        'languages-title': 'Languages',
-        'interests-title': 'Interests',
-        'arabic': 'Arabic - Native',
-        'french': 'French - Fluent',
-        'english': 'English - Fluent',
-        'tech-watch': 'Technology Watch',
-        'e-education': 'E-Education',
-        'ai': 'Artificial Intelligence',
+        'cloud-database': 'Databases',
 
         // Projects section
-        'view-project': 'View project',
         'projects-title': 'Projects',
         'view-project': 'View project',
         'demo': 'Demo',
+        'judiciAIre_desc': 'AI-Powered Legal Chatbot for Moroccan Law',
         'cv-genius-desc': 'CV Classification with Machine Learning',
         'ivision-desc': 'Cloud and AI-based Web Application',
         'school-management-desc': 'School Management System',
@@ -112,6 +104,13 @@ const translations = {
 
         // Experience section
         'experience-title': 'Professional Experience',
+        'abb-internship': 'Data Science Intern – Al Barid Bank, Rabat',
+        'abb-internship-tasks': [
+            'Built a credit card fraud detection system on highly imbalanced data (0.67% fraud rate)',
+            'Applied feature engineering + resampling strategies to improve generalization.',
+            'Optimized XGBoost, Random Forest, LightGBM models, achieving 95.9% accuracy and 88% recall.'
+        ],
+
         'web-dev-internship': 'Web Development Internship - RADEEF, Fez',
         'internship-tasks': [
             'Web application development',
@@ -131,7 +130,7 @@ const translations = {
         'bac-period': '2021',
 
         // Contact section
-        'name-contact':'Name',
+        'name-contact': 'Name',
 
         // Copyright section
         'copyright': '© 2025 Ayoub Gorry. All rights reserved.'
@@ -144,7 +143,7 @@ function setLanguage(lang) {
     
     document.documentElement.lang = lang;
     
-    // Traduction des éléments simples
+    // Traduction des éléments simples (texte)
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[lang][key]) {
@@ -159,6 +158,14 @@ function setLanguage(lang) {
             element.innerHTML = translations[lang][key]
                 .map(item => `<li>${item}</li>`)
                 .join('');
+        }
+    });
+
+    // 🔹 Traduction des liens (comme le lien du CV)
+    document.querySelectorAll('[data-i18n-link]').forEach(element => {
+        const key = element.getAttribute('data-i18n-link');
+        if (translations[lang][key]) {
+            element.setAttribute('href', translations[lang][key]);
         }
     });
 
