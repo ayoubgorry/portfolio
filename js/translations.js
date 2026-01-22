@@ -34,6 +34,8 @@ const translations = {
         'colorizer-desc': 'Application de Colorisation d\'Images',
         'rdeef-desc': 'Projet de stage en REGIE AUTONOME INTERCOMMUNALE DE DISTRIBUTION D\'EAU ET D\'ELECTRICITE DE FES',
         'view-doc': 'Voir Doc',
+        'assad-title': 'ASSAD – Assistant Intelligent CAN 2025',
+        'assad-desc': 'Système RAG Multi-Retrievers (données statiques/dynamiques) pour des réponses fiables et sans hallucinations sur la CAN 2025.',
 
         // Experience section
         'experience-title': 'Expérience Professionnelle',
@@ -103,6 +105,8 @@ const translations = {
         'colorizer-desc': 'Image Colorization Application',
         'rdeef-desc': 'RADEEF Internship Project - Fez',
         'view-doc': 'View Doc',
+        'assad-title': 'ASSAD – CAN 2025 Intelligent Assistant',
+        'assad-desc': 'Multi-Retriever RAG system (static/dynamic data) providing reliable, hallucination-free answers for the 2025 Africa Cup of Nations.',
 
         // Experience section
         'experience-title': 'Professional Experience',
